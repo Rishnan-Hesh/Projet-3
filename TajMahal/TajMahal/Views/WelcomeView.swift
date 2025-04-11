@@ -16,7 +16,7 @@ struct WelcomeView: View {
         NavigationView {
             
 
-        NavigationStack{ // Navigation entre les vues
+        NavigationStack{
             
             Image("TajMahal")
                 .resizable()
@@ -45,7 +45,7 @@ struct WelcomeView: View {
                         .resizable()
                         .renderingMode(.template)//Permet de changer la couleur
                         .frame(width: 40, height: 40)
-                        .foregroundColor(Color("CustomGray")) //Ici tint ou foregroundColor
+                        .foregroundColor(Color("CustomGray")) // tint ou foregroundColor
                 }
                 .padding(20)
                 .font(.system(size: 25))

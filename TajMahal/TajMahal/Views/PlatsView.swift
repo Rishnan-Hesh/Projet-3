@@ -27,7 +27,6 @@ struct PlatsView: View {
                             
 
                         PeppersView(dishes: dishes)
-                            .padding(12)// a replacer
                             .position(x: 305, y: 35)
                     }
 
@@ -43,7 +42,7 @@ struct PlatsView: View {
                             .foregroundColor(.gray)
                             .padding(.bottom, 20)
 
-                        Divider()
+                        Divider() // pour la ligne qui sépare les deux textes
 
                         // Ingrédients
                         Text("Ingrédients:")

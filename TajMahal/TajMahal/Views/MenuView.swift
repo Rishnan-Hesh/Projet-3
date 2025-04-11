@@ -55,7 +55,6 @@ struct MenuView: View {
                     .padding(.bottom, 20)
                 }
             }
-            // ✅ Place les modificateurs ici, sur la NavigationView
             .navigationTitle("Menu")
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarBackButtonHidden(true)
