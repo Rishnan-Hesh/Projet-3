@@ -34,11 +34,9 @@ struct PlatsView: View {
                         // Allergènes
                         Text("Allergènes:")
                             .font(.system(.subheadline))
-                            .font(.system(size: 18))
                             .foregroundColor(.gray)
                             .bold()
                         Text(dishes.allergens)
-                            .font(.system(size: 18))
                             .foregroundColor(.gray)
                             .padding(.bottom, 20)
 
@@ -54,7 +52,7 @@ struct PlatsView: View {
                             .foregroundColor(.gray)
                             
                     }
-                    .font(.system(size: 15))
+                    .font(.system(size: 12))
                 }
                 .padding(20)
             }

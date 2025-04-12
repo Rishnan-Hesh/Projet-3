@@ -25,7 +25,7 @@ struct LineView: View {
         .padding(.horizontal, 20)
         .padding(.vertical, 5)
         .foregroundColor(.customGray)
-        .font(.system(size: 15))
+        .font(.system(size: 12))
     }
 }
 
