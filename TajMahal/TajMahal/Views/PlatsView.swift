@@ -14,7 +14,8 @@ struct PlatsView: View {
     var dishes: Dish
 
     var body: some View {
-        NavigationView {
+        
+        NavigationStack {
             
                 VStack(alignment: .leading, spacing: 40) {
 
@@ -34,10 +35,10 @@ struct PlatsView: View {
                         // Allergènes
                         Text("Allergènes:")
                             .font(.system(.subheadline))
-                            .foregroundColor(.gray)
+                            .foregroundColor(.customGray)
                             .bold()
                         Text(dishes.allergens)
-                            .foregroundColor(.gray)
+                            .foregroundColor(.customGray)
                             .padding(.bottom, 20)
 
                         Divider() // pour la ligne qui sépare les deux textes
@@ -45,11 +46,11 @@ struct PlatsView: View {
                         // Ingrédients
                         Text("Ingrédients:")
                             .font(.system(.subheadline))
-                            .foregroundColor(.gray)
+                            .foregroundColor(.customGray)
                             .bold()
                             .padding(.top, 20)
                         Text(dishes.ingredients)
-                            .foregroundColor(.gray)
+                            .foregroundColor(.customGray)
                             
                     }
                     .font(.system(size: 12))

@@ -13,9 +13,7 @@ struct WelcomeView: View {
     
     var body: some View {
         
-        NavigationView {
-            
-
+        
         NavigationStack{
             
             Image("TajMahal")
@@ -75,7 +73,6 @@ struct WelcomeView: View {
                     .padding(.horizontal, 25)
                     .padding(.bottom,100)
                     
-                    }
                 }
             }
         }

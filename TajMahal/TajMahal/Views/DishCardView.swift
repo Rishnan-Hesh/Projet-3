@@ -20,18 +20,18 @@ struct DishCardView: View {
             
             VStack(alignment: .leading, spacing: 10) {
                 Text(dishes.name)
-                    .font(.system(.callout))
-                    .foregroundStyle(Color.black)
+                    .bold()
+                    .foregroundStyle(Color.customGray)
                 
                 Text(dishes.description)
                     .font(.system(.caption))
-                    .foregroundStyle(Color.black)
+                    .foregroundStyle(Color.customGray)
                     .multilineTextAlignment(.leading)
                 
                 HStack {
                     Text(dishes.price)
                         .font(.system(.caption))
-                        .foregroundStyle(Color.black)
+                        .foregroundStyle(Color.customGray)
                     
                     Spacer()
                     PeppersView(dishes: dishes)

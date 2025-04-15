@@ -14,7 +14,7 @@ struct MenuView: View {
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 Color(.customMenu)
                     .ignoresSafeArea()
