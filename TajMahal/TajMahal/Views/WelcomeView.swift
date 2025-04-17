@@ -53,26 +53,25 @@ struct WelcomeView: View {
                 LineView(imageSystemName: "location.north.circle", leftText: "12 Avenue de la Brique-75010 Paris", rightText: "")
                 LineView(imageSystemName: "globe", leftText: "www.tajmahal.fr", rightText: "")
                 LineView(imageSystemName: "phone", leftText: "06 12 34 56 78", rightText: "")
-                    
                 
                 
                 Spacer()
                 
-                
-                NavigationLink(destination: MenuView()) {
+                NavigationLink {
                     
-                    Button("Accéder au menu") {
-                        print("Bouton cliqué")
-                    }
-                    .navigationTitle("")
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .padding(12)
-                    .frame(maxWidth: .infinity)
-                    .background(RoundedRectangle(cornerRadius: 12).fill(Color.customRed))
-                    .padding(.horizontal, 25)
-                    .padding(.bottom,100)
+                    MenuView()
                     
+                } label: {
+                    
+                    Text("Accéder au menu")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .padding(12)
+                        .frame(maxWidth: .infinity)
+                        .background(RoundedRectangle(cornerRadius: 12).fill(Color.customRed))
+                        .padding(.horizontal, 25)
+                        .padding(.bottom,100)
+                        .buttonStyle(.plain)
                 }
             }
         }
